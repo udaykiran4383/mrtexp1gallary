@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Page Title</title>
+  <style>
+
+    body {
+    background-image: url("space-3288275.jpeg"); /* Replace 'your-image-url.jpg' with the actual path or URL of your background image */
+    background-size: cover; /* This will make the image cover the entire body element */
+    background-attachment: fixed; /* This will keep the background fixed as the page scrolls */
+    margin: 0;
+    padding: 0;
+}
+
+    .wrapper {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      max-width: 75%;
+      font-size: 100px;
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      color: #540032;
+    }
+
+    .title {
+      background-image: url("ellipse-2486672.jpeg");
+      background-attachment: fixed;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h1 class="title">"Exploring the Red Planet: IIT Bombay's Artistry from Afar"</h1>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script>
+    var tl = gsap.timeline({ repeat: -1 });
+    tl.to("h1", 30, { backgroundPosition: "-960px 0" });
+  </script>
+</body>
+</html>
